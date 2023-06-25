@@ -1,0 +1,14 @@
+[package]
+name = "model-derive"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+# aws-lambda-api = { package="aws-lambda-api", path = "../" }
+quote = "1.0"
+syn = { version = "2.0.10", features = ["parsing", "extra-traits"] }
+
+[lib]
+proc-macro = true
